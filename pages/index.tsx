@@ -11,7 +11,7 @@ export default function Index({}: NextPage) {
   const [customText, setCustomText] = React.useState<{
     shipping_address: string
     submit: string
-  }>({ shipping_address: null, submit: null })
+  }>({ shipping_address: '', submit: '' })
 
   const createCheckoutSession = async () => {
     try {
