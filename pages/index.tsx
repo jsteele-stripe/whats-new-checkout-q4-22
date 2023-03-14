@@ -98,7 +98,7 @@ export default function Index({}: NextPage) {
         <p className="mt-2 text-lg text-gray-600">
           Require terms of service agreement before allowing customers to pay.
         </p>
-        <div className="mt-8">
+        <div className="my-8">
           <SyntaxHighlighter
             className="mb-8"
             language="typescript"
@@ -126,13 +126,19 @@ export default function Index({}: NextPage) {
             </div>
           </div>
         </div>
+        <button
+          className="inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+          onClick={createCheckoutSession}
+        >
+          Create Checkout Session
+        </button>
       </div>
       <div className="py-12">
         <h1 className="text-2xl font-bold">Custom text</h1>
         <p className="mt-2 text-lg text-gray-600">
           Present additional text to customers when they purchase with Checkout.
         </p>
-        <div className="mt-8">
+        <div className="my-8">
           <SyntaxHighlighter
             className="mb-8"
             language="typescript"
@@ -165,13 +171,19 @@ export default function Index({}: NextPage) {
             </label>
           </div>
         </div>
+        <button
+          className="inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+          onClick={createCheckoutSession}
+        >
+          Create Checkout Session
+        </button>
       </div>
       <div className="py-12">
         <h1 className="text-2xl font-bold">Post-payment invoices</h1>
         <p className="mt-2 text-lg text-gray-600">
           Send post-payment invoices for one-time payments with Checkout.
         </p>
-        <div className="mt-8">
+        <div className="my-8">
           <SyntaxHighlighter
             className="mb-8"
             language="typescript"
@@ -196,13 +208,13 @@ export default function Index({}: NextPage) {
             </div>
           </div>
         </div>
+        <button
+          className="inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+          onClick={createCheckoutSession}
+        >
+          Create Checkout Session
+        </button>
       </div>
-      <button
-        className="inline-flex items-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-        onClick={createCheckoutSession}
-      >
-        Create Checkout Session
-      </button>
     </div>
   )
 }
